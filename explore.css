@@ -1,0 +1,183 @@
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#0f0f12;
+}
+
+/* SIDEBAR */
+
+div[style*="position:fixed"] {
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a1a1d, #111);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+div[style*="position:fixed"] h3 {
+  padding: 20px;
+  color: #ff3333;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cfcfcf;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 51, 51, 0.15);
+  color: #ff3333;
+  transform: translateX(6px);
+}
+
+
+/* MAIN */
+
+.main{
+margin-left:220px;
+padding:30px;
+}
+.main h1{
+    color: #ff4b2b;
+}
+
+/* FEATURED */
+
+.featured{
+background:#0f0f12;
+padding:20px;
+border-radius:10px;
+margin-bottom:30px;
+display:flex;
+align-items:center;
+gap:20px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+color: white;
+border-color: #ff4b2b;
+}
+
+.featured img{
+width:300px;
+border-radius:8px;
+}
+
+.featured button{
+padding:10px 20px;
+background:#ff4b2b;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* FILTERS */
+
+.filters{
+margin-bottom:20px;
+}
+
+.filters button{
+padding:8px 15px;
+border:none;
+margin-right:10px;
+border-radius:20px;
+cursor:pointer;
+background:#ddd;
+}
+
+.filters button.active{
+background:#ff4b2b;
+color:white;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:20px;
+}
+
+/* CARD */
+
+.card{
+background:#1a1a1d;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+color: white;
+}
+.card span{
+    color: white;
+}
+
+.card img{
+width:100%;
+height:140px;
+object-fit:cover;
+}
+
+.card-content{
+padding:10px;
+}
+
+.card-content h4{
+margin:5px 0;
+}
+
+.actions{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.actions button{
+border:none;
+background:none;
+cursor:pointer;
+font-size:16px;
+}
+
+/* MODAL */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.modal video{
+width:600px;
+max-width:90%;
+border-radius:10px;
+}
+
+.close{
+position:absolute;
+top:30px;
+right:40px;
+font-size:30px;
+color:white;
+cursor:pointer;
+}
